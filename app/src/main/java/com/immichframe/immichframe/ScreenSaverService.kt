@@ -462,8 +462,8 @@ class ScreenSaverService : DreamService() {
                         retryCount++
                         Toast.makeText(
                             this@ScreenSaverService,
-                            "Connecting to server... Attempt $retryCount of $maxRetries",
-                            Toast.LENGTH_SHORT
+                            "Connecting to server... (${t.message}) Attempt $retryCount of $maxRetries",
+                            Toast.LENGTH_LONG
                         ).show()
                         handler.postDelayed({
                             attemptFetch()
